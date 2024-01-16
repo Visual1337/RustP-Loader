@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ImGUI">
+      <UniqueIdentifier>{de2f01d8-fb39-45a5-9723-12dccc8c1e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{775ae1e8-9dd6-4cac-a0d3-f809d360e073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protect">
+      <UniqueIdentifier>{f9e03dba-907e-403d-b944-a670abefd71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{2a78e0d5-78c0-4fe7-bd97-1e338c16f7f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="entrypoint.cpp" />
+    <ClCompile Include="cGui\imgui.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="cGui\imgui_draw.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="cGui\imgui_impl_dx9.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Inject\MM.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="Socket.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="XorStr.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\imconfig.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\imgui.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\imgui_impl_dx9.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\imgui_internal.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\stb_rect_pack.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\stb_textedit.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\stb_truetype.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="cGui\WndProc.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="URL.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Protect\memory.hpp">
+      <Filter>Protect</Filter>
+    </ClInclude>
+    <ClInclude Include="Protect\driver.h" />
+    <ClInclude Include="Protect\lazy.h" />
+    <ClInclude Include="Protect\process.h" />
+    <ClInclude Include="Auth\auth.hpp" />
+    <ClInclude Include="Auth\json.hpp" />
+    <ClInclude Include="Protect\skCrypt.h" />
+    <ClInclude Include="Inject\MM.H" />
+    <ClInclude Include="Inject\Code.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Protect\protection.h">
+      <Filter>Protect</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Auth\libcurl.lib" />
+    <Library Include="Auth\library_x64.lib" />
+  </ItemGroup>
+</Project>
